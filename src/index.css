@@ -1,0 +1,470 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*{
+  @apply p-0 m-0;
+}
+
+/*Mobile Menu*/
+.menu-icon{
+  @apply hidden;
+}
+
+/*Navbar*/
+.navbar-container{
+  @apply flex mx-[12rem] py-[1rem];
+}
+
+.logo{
+  @apply mr-[2rem] cursor-pointer;
+}
+
+li{
+  @apply px-[1rem] cursor-pointer duration-300 text-['dark-grayish-blue'];
+}
+
+.active{
+  @apply underline underline-offset-[1.5rem] font-bold text-['very-dark-blue'] decoration-[5px] decoration-['orange'];
+}
+
+.navbar-items{
+  @apply flex;
+}
+
+.profile{
+  @apply flex ml-auto items-center;
+}
+
+.cart{
+  @apply w-[16px] h-[16px] cursor-pointer;
+  position: relative;
+}
+
+.avatar{
+  @apply w-[32px] h-[32px] ml-[2.5rem] cursor-pointer;
+}
+
+hr{
+  @apply mx-[12rem] border-[1px];
+  color: black
+
+}
+
+.hero-container{
+  @apply grid mx-[10rem] gap-[0rem];
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+.hero-content{
+  @apply mt-[5rem] w-[20rem] ml-[3rem];
+}
+
+.hero-heading{
+  @apply text-3xl pt-[0.6rem] pb-[2rem];
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+}
+
+
+
+.hero-image-carousel{
+  @apply mt-[2rem] ml-[5rem] w-[25rem];
+}
+
+.hero-text{
+  color: hsl(26, 100%, 55%);
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.description{
+  @apply text-[11px];
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  color:hsl(219, 9%, 45%);
+}
+
+.price{
+  font-weight: bold;
+  font-family: 'Kumbh Sans';
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.percent{
+  background-color: hsl(25, 100%, 94%);
+  font-size: 0.7rem;
+  color: hsl(26, 100%, 55%);
+  padding: 1px 5px;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+
+.former-price{
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  font-size: 12px;
+  color:  hsl(220, 14%, 75%);
+  text-decoration: line-through;
+  text-underline-offset: -2px; 
+  text-decoration-thickness: 1px;
+}
+
+.btn-count{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 1.5rem 0;
+  padding: 10px 20px;
+  background-color:  hsl(223, 64%, 98%);
+  border-radius: 5px;
+}
+
+.tag{
+  @apply mx-auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.counter{
+  padding: 0 1.5rem;
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+}
+
+.btn-cart{
+  display: flex;
+  align-items: center;
+  background-color:hsl(26, 100%, 55%);
+  padding: 14px 50px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.btn-cart:hover{
+   box-shadow: 1px 7px 5px hsl(25, 100%, 94%);
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+}
+
+.btn-cart-img{
+  width: 12px;
+  color: white;
+}
+
+.btn-desc{
+  font-size: 10px;
+  margin-left: 0.7rem;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+}
+
+
+.cnt{
+
+  position: absolute;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  background-color: hsl(26, 100%, 55%);
+  font-size: 8px;
+  padding: 0.5px 5px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+}
+
+.tag4{
+  display: flex; 
+}
+
+
+
+/* .modal{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.modal-content{
+  position: absolute;
+  display: flex;
+  z-index: 1000;
+  background-color: hsl(0, 0%, 100%);
+} */
+
+.fall{
+  color: hsl(219, 9%, 45%);
+  font-family: 'Kumbh Sans';
+  font-size: 18px;
+}
+
+.contss{
+  color: hsl(219, 9%, 45%);
+  font-family: 'Kumbh Sans';
+  font-size: 18px;
+}
+
+.sblach{
+  color: black;
+}
+
+.checkout{
+  display: block;
+}
+
+.modal-active{
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 100%;
+}
+
+.image-gallery-slides img {
+  width: 100%;
+  height: 60vh;
+  border-radius: 16px;
+}
+
+.image-gallery-thumbnail{
+  width: 75px;
+  margin-top: 15px;
+  margin-right: 12px; 
+  border: none;
+}
+
+.img-container{
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+}
+.image-gallery-thumbnail.active .overlay,
+.image-gallery-thumbnail:hover .overlay{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+ .image-gallery-thumbnail.active,
+.image-gallery-thumbnail:hover {
+  border-radius: 12px;
+  border: 2px solid hsl(26, 100%, 55%);
+} 
+
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .hero-container{
+    @apply grid mx-[0rem];
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+
+
+  .navbar-items{
+    display: none;
+  }
+
+  .hero-image-carousel{
+    @apply m-[0px];
+    width: 100%;
+  }
+
+  .image-gallery-slides img {
+    width: 100%;
+    height: 32vh;
+  }
+
+  .empty-cart{
+    color: hsl(219, 9%, 45%);
+    font-family: 'Kumbh Sans';
+  }
+
+  .image-gallery-thumbnails-container{
+    display: none;
+  }
+
+  .buttons{
+    display: block;
+    align-items: center;
+    width: 100%
+  }
+
+  .btn-count{
+    justify-items: center;
+    width: 90%;
+    height: 70px;
+  }
+
+  .btn-cart{
+    @apply text-center;
+    width: 90%;
+    height: 70px;
+    align-items: center;
+    justify-items: center;
+    /* padding-left: auto;
+    padding-right: auto; */
+    margin: 0px;
+  }
+
+  .hero-content{
+    @apply mx-[1.5rem] mt-[1rem] w-[95%];
+  }
+
+  .minus, .plus{
+    width: 1.5rem;
+  }
+
+  .counter{
+    font-size: 1.5rem;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  .hero-text{
+    font-size: 17px;
+  }
+
+  .hero-heading{
+    font-size: 35px;
+  }
+
+  .description{
+    font-size: 17px;
+    font-weight: normal;
+  }
+
+  .price{
+    font-size: 2rem;
+  }
+
+  .former-price{
+    font-size: 1.5rem;
+  }
+
+  .percent{
+    font-size: 1.5rem;
+  }
+
+  .btn-desc{
+    font-size: 1.5rem;
+  }
+
+  .tag2{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+
+  .btn-cart-img {
+    width: 1.5rem;
+    margin-left: 40px;
+  }
+
+  .navbar-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .avatar{
+    width: 40px;
+    height: 40px;
+    margin-left: 1.5rem;
+    position: relative;
+  }
+
+  .cart{
+    width: 30px;
+    height: 30px;
+  }
+
+  .cnt{
+    margin-left: 15px;
+    margin-bottom: 35px;
+    background-color: hsl(26, 100%, 55%);
+    font-size: 12px;
+    padding: 0.5px 5px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Kumbh Sans';
+    font-weight: 700;
+  }
+
+  .navbar-container{
+    display: flex;
+    align-items: baseline;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-icon{
+    display: block;
+  }
+
+
+  .menu-container {
+    position: fixed;
+    top: 44px;
+    left: 30px;
+    z-index: 1000; 
+  }
+
+  .unordered{
+    margin-top: 3.5rem;
+    margin-right: 6.5rem;
+  }
+
+  .list{
+    padding: 0rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Kumbh Sans';
+  }
+
+  .tag3{
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    width: 60%;
+  }
+
+  .logo{
+    margin-left: 40px;
+  }
+
+  .image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg{
+    display: block;
+    height: 45px;
+    width: 45px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 100%;
+    padding: 10px;
+    stroke-width: 3.5px;
+  }
+
+  .image-gallery-fullscreen-button{
+    display: none;
+  }
+}
