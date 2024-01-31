@@ -18,21 +18,21 @@ export const MobileMenu = () => {
   ];
 
   return (
-    <div className={`${isMenuOpen ? 'tag3' : ''}`}>
-    <div className={`menu-container ${isMenuOpen ? 'menu-open' : ''}`}>
-      <div className='menu-icon' onClick={toggleMenu}>
-        {isMenuOpen ? <img src={openMenu} alt={openMenu} /> : <img src={closeMenu} alt={closeMenu} />}
-      </div>
-      {isMenuOpen && (
+    <div className={`${isMenuOpen ? 'menu' : ''}`}>
+      <div className={`menu-container ${isMenuOpen ? 'menu-open' : ''}`}>
+        <div className='menu-icon' onClick={toggleMenu}>
+          {isMenuOpen ? <img src={openMenu} alt={openMenu} /> : <img src={closeMenu} alt={closeMenu} />}
+        </div>
+        {isMenuOpen && (
         <div className='mobile-menu'>
-          <ul className='unordered'>
+          <ul className='mobile-nav-items'>
             {menus.map((item) => (
-              <li className='list' key={item.id}>{item.name}</li>
+              <li className='mobile-nav-list' key={item.id}>{item.name}</li>
             ))}
           </ul>
         </div>
-      )}
-    </div>
+        )}
+      </div>
     </div>
   );
 };

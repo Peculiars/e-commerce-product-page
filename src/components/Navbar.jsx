@@ -48,10 +48,10 @@ export const Navbar = ({ count, setCartCount}) => {
             </li>
           ))}
         </ul>
-        <div className='profile'>
+        <div className='info'>
           <img className='cart' src={cart} alt={cart} onClick={handleAvatarClick}/>
-          {count > 0 && <span className='cnt'>{count}</span>} 
-          <img className={`avatar ${isAvatarClicked ? 'avatar-clicked' : ''}`} src={avartar} alt={avartar} onClick={handleAvatarClick} />
+          {count > 0 && <span className='navbar-cart-count'>{count}</span>} 
+          <img className='avatar'  src={avartar} alt={avartar}/>
         </div>
       </div>
       <hr />
