@@ -212,7 +212,7 @@ hr{
   }
 
   .logo{
-    @apply ml-[40px];
+    @apply mx-[15px];
   }
 
   .navbar-container{
@@ -235,12 +235,16 @@ hr{
     z-index: 1000; 
   }
 
+  .menu-open{
+    @apply ml-[2rem] mt-[3rem];
+  }
+
   .menu-icon{
     @apply block;
   }
 
   .menu-container {
-    @apply fixed top-[44px] left-[30px];
+    @apply top-[44px] left-[30px] ;
     z-index: 1000; 
   }
 
