@@ -270,7 +270,7 @@ hr{
   }
 
   .cart-btn{
-    @apply text-center w-[90%] h-[70px] items-center justify-center m-[0];
+    @apply text-center w-[90%] h-[70px] flex items-center justify-center m-[0];
   }
 
   .hero-content{
@@ -318,7 +318,7 @@ hr{
   }
 
   .btn-cart-img {
-    @apply w-[1.5rem] ml-[40px];
+    @apply w-[1.5rem] ml-[0px];
   }
 
   .cart{
