@@ -212,7 +212,7 @@ hr{
   }
 
   .logo{
-    @apply ml-[30px];
+    @apply mx-[15px] ml-[2rem];
   }
 
   .navbar-container{
@@ -244,7 +244,7 @@ hr{
   }
 
   .menu-container {
-    @apply fixed top-[44px] left-[30px] ;
+    @apply absolute top-[44px] left-[30px];
     z-index: 1000; 
   }
 
